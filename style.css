@@ -1,0 +1,105 @@
+¨*{
+    font-family: "Roboto Mono", monospace;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.calculator-conteiner {
+    height: 50%;
+    width: 15%;;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(89, 89, 89);
+    border-radius: 10px;
+    border: 1px solid rgb(116, 108, 108);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    
+    
+}
+
+.display{
+    margin: 10px;
+    width: 100%;
+    height: 25%;
+    background-color: rgba(161, 204, 174, 0.621);
+    box-shadow: inset 1px 2px 7px rgba(2, 2, 2, 2);
+    border-radius: 5px;
+}
+
+.buttons-out{
+    width: 100%;
+    height: 5%;
+}
+
+.container-on-of{
+    padding: 1.5px;
+    width: 40px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    
+    background-color: rgb(39, 34, 36);
+    border-radius: 20px;
+}
+
+.container-on-of:hover{
+    justify-content: flex-end;
+    
+
+}
+
+button.on-of{
+    width: 15px;
+    height: 15px;
+    border: none;
+    border-radius: 100%;
+}
+
+.calculator-grid{
+    margin-top: 30px;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 50px);
+    gap: 5px;
+    justify-items: center; 
+    align-items: center;
+
+}
+
+button{
+   font-weight: bold;
+   font-size: 1rem;
+   border: none;
+   border-radius: 13px;
+   width: 50px;
+   height: 50px;
+   background-color: rgb(170, 180, 173); 
+   box-shadow: inset 1px 0px 3px rgba(2, 2, 2, 2);
+}
+
+button.equal {
+    grid-column: span 2;
+    width: 100%;
+    background-color: rgb(227, 217, 217); 
+}
+
+button.diferent{
+    background-color: rgba(79, 187, 95, 0.614)
+}
+button.delete{
+    background-color: rgb(187, 79, 79);
+    text-align: center;
+}
+
+button.delete.back{
+    font-size: .8rem;
+}
